@@ -15,7 +15,7 @@ export default function WelcomePage() {
     }
 
     //React onmount action. That is it calls the api on component mount only
-    useEffect(()=>{
+    useEffect(() => {
         callApi();
     }, []);
 
