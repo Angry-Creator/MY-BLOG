@@ -7,21 +7,21 @@ const excerciseSchema = new Schema({
         type: String,
         require: true
     },
-    description: {
+    name: {
         type: String,
         require: true
     },
-    duration: {
-        type: Number,
+    password: {
+        type: String,
         require: true
     },
-    date: {
+    photo: {
         type: String,
         require: true
     },
 
 }, {
-    timestamps: true,
+    timestamps: false,
 });
 
 const Excercise = mongoose.model('Excercise', excerciseSchema);

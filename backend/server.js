@@ -22,10 +22,8 @@ db.once("open", function () {
 app.use(express.json());
 
 const excercise = require("../backend/routes/excercise");
-const user = require("../backend/routes/user");
 
 app.use("/excercise", excercise);
-app.use("/user", user);
 
 app.listen(port, ()=>{
     console.log(`Server is running at Port ${port}`);
