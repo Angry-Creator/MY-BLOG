@@ -31,7 +31,7 @@ export default function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg bg-light py-2 sticky-top">
             <div className="container">
-                <Link className="navbar-brand fs-4">Chidera Nwankwo</Link>
+                <Link className="navbar-brand fs-4 fw-bold">Chidera Nwankwo</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBox" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

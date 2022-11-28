@@ -6,8 +6,9 @@ import { lazy, Suspense } from "react";
 const Home = lazy(() => import("./pages/Home"));
 const Blogs = lazy(() => import("./pages/Blogs"));
 const Contact = lazy(() => import("./pages/Contact"));
-const Blog = lazy(()=>import("./pages/Blog"));
-const Image = lazy(()=>import("./pages/Image"));
+const Blog = lazy(() => import("./pages/Blog"));
+const Image = lazy(() => import("./pages/Image"));
+const Error = lazy(() => import("./pages/Error"));
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/image" element={<Image />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </Router>
       </Suspense>
